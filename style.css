@@ -3,10 +3,10 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+
 }
 /*  */
 /* navbar */
-/*  */
 
 .navbar{
     display: flex;
@@ -57,8 +57,7 @@ a{
     transition: all 0.5s;
   }
   a.focus:focus{
-        background-color: #ffffff;
-        
+    background-color: #ffffff;  
   }
 
 /*  */
@@ -70,7 +69,7 @@ a{
 /*  */
 
 .first-section{
-    background: url(/edgar-lopez-w9EUwWFPeT4-unsplash.jpg);
+    background: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -107,10 +106,12 @@ a{
     line-height: 2;
 }
 .second-part{
-    width: 20%
+    width: 20%;
+    
 }
 .second-part img{
     width: 60%;
+    border-radius: 10px;;
 }
 .btn {
     -webkit-border-radius: 60;
@@ -140,6 +141,7 @@ a{
     background-color: rgb(228, 213, 209);
     height: 100vh;
     width: 100%;
+    
 }
 .middle-container {
     display: flex;
@@ -148,7 +150,7 @@ a{
     max-width: 80%;
     margin: auto;
     padding: 40px;
-    height: 90%;
+    height: 80%;
 }
   
   .my-hobbies h1 {
@@ -171,13 +173,12 @@ a{
     text-align: center;
   }
   
-  .fas {
-    font-size: 3.75rem;
+  .each-hobby{
+    height: 200px;
+    width: 200px;
   }
   
-  .bat {
-    width: 3.75rem;
-  }
+  
   h1 {
     text-align: left;
     font-size: 3rem;
@@ -196,24 +197,49 @@ a{
 /* bottom-container */
 /*  */
 
-.bottom-container {
+.third-section{
     height: 100vh;
+    width: 100%;
+    /* background-color: red; */
     background-color: #252422;
+
+}
+.bottom-container {
+    
+    /* background-color: red; */
     text-transform: uppercase;
     list-style: none;
     padding-top: 5rem;
-    padding-bottom: 5rem;
-    width: 100%;
+    padding-bottom: 5rem; 
+    /* max-width: 80%; */
+    margin: 0 auto;
+    /* width: 100%; */
+    
+ 
   }
   .skill {
     background-color: #333;
     margin: 0 auto;
+    /* margin-top:5rem; */
     max-width: 500px;
     color: #fff;
     padding: 20px;
+     
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+.footer-container{
+    /* max-width: 500px; */
+    margin: 0 auto;
+    /* background-color:#c05429; */
+    text-align: center;
+    
+    /* margin-top: 4rem;*/
+    padding-top: 4rem; 
+}
 
+.last-line{
+    margin-top: 1rem;
+}
 .skill li {
     
     padding: 10px;
@@ -224,6 +250,7 @@ a{
 
 .bar {
     background: #353b48;
+   
     display: block;
     height: 2vh;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -241,9 +268,15 @@ a{
     height: 2vh;
     float: left;
     background: linear-gradient(135deg, rgba(236,0,141,1)0%, rgba(252,103,103,1) 100%);
+    transition-timing-function: ease-out;
+    transition-duration: 3s;
+}
+.common{
+    opacity: 0;
+    /* transition :1s ease 0.3s; */
 }
 
-.cpp {
+/* .cpp {
     width: 90%;
     animation: cpp 3s;
 }
@@ -261,9 +294,9 @@ a{
 .javascript {
     width: 40%;
     animation: javascript 3s;
-}
+} */
 
-@keyframes cpp {
+/* @keyframes cpp {
     0% {
         width: 0%;
     }
@@ -297,34 +330,69 @@ a{
     100% {
         width: 40%;
     }
-}
+} */
   
   /* responsive */
  /*  */
- @media (max-width:1200px)
+ @media (max-width:1326px)
  {
-     html{
-         font-size: 12px;
-     }
- }
-  @media (max-width:656px)
- {
-     html{
-        font-size: 10px;
-     }
-     .second-part img{
-        width: 70%;
+    html{
+        font-size: 12px;
     }
-     .btn{
-        font-size: 10px;
-        padding: 5px 10px 5px 10px;
-        margin-right: 2rem;
-     }
-     .navbar .logo a{
-        font-size: 1rem;
-     }
-     nav ul li a {
-        font-size: 0.75rem;
-        padding: 0 1rem;
+    .each-hobby{
+     height: 80px;
+     width: 80px;
+   }
+   .btn{
+     font-size: 15px;
+     padding: 7px 12px 7px 12px;
+     margin-right: 3rem;
+  }
+ }
+ @media (max-width:730px)
+ {
+    html{
+       font-size: 10px;
+    }
+    .second-part img{
+       width: 70%;
+   }
+   .each-hobby{
+     height: 80px;
+     width: 80px;
+   }
+    .btn{
+       font-size: 10px;
+       padding: 5px 10px 5px 10px;
+       margin-right: 2rem;
+    }
+    .navbar .logo a{
+       font-size: 1rem;
+    }
+    nav ul li a {
+       font-size: 0.75rem;
+       padding: 0 1rem;
  } 
-  
+ @media (max-width: 480px){
+   html{
+     font-size: 8px;
+  }
+  .second-part img{
+     width: 80%;
+ }
+ .each-hobby{
+   height: 60px;
+   width: 60px;
+ }
+  .btn{
+     font-size: 10px;
+     padding: 3px 8px 3px 8px;
+     margin-right: 1.5rem;
+  }
+  .navbar .logo a{
+     font-size: 0.8rem;
+  }
+  nav ul li a {
+     font-size: 0.75rem;
+     padding: 0 1rem;
+ }
